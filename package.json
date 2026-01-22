@@ -1,0 +1,22 @@
+{
+  "name": "consilium",
+  "version": "1.0.0",
+  "description": "Consilium - React Native app with Node.js backend and Convex",
+  "type": "module",
+  "scripts": {
+    "dev": "convex dev",
+    "deploy": "convex deploy",
+    "backend:dev": "cd backend && bun run dev",
+    "backend:start": "cd backend && bun start",
+    "frontend:start": "cd frontend && bun run start",
+    "frontend:android": "cd frontend && bun run android",
+    "frontend:ios": "cd frontend && bun run ios",
+    "install:all": "bun install && cd backend && bun install && cd ../frontend && bun install"
+  },
+  "keywords": ["consilium", "react-native", "nodejs", "convex", "expo"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "convex": "^1.12.0"
+  }
+}
